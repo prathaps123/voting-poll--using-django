@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<form  method="POST">
+{% csrf_token %}
+<h1>WELCOME TO THE VOTING POLL!!</h1>
+
+<li></li><label for="n">NAME:</label><br><input type="text" name="name" placeholder="NAME"  id="n"   ></li>
+
+<li><label for="a">ADHAR No:</label><br><input type="text" name="adhar_id" placeholder="ADHAR"  id="a"   
+pattern="[0-9]{12}" title="12DIGITS REQUIRED"></li>
+
+<li><label for="v">VOTER_ID:</label><br><input type="text" name="voter_id" placeholder="VOTERID"  id="v"   
+pattern="(?=.*[A-Z])(?=.*[0-9]).{9,}" title="ENTER YOUR CORRECT VOTER ID NUMBER"></li><br>
+<label for="n">CHOOSE:</label><br>
+<select name="vote">
+    <option value="AMK">AMK</option>
+    <option value="BMK">BMK</option>
+    <option value="CMK">CMK</option>
+    <option value="CCMK">CCMK</option>
+    <option value="NOTA">NOTA</option>
+</select><br>
+<input type="submit" value="submit" id="btn">
+</form>
+
+
+        
+{% endblock content %}

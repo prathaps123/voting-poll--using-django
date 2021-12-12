@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="cone">
+    <strong>CLICK HERE TO VOTE: </strong>   
+    <a href="{% url 'new' %}"><input type="submit" value="NEW" id="btn-1"></a>
+
+</div>
+{% for i in d %}
+<h3 style="border: 1px solid black;color: white ;margin-left:6cm;margin-right: 6cm;padding: 10px; text-align: left;">{{i.id}}.{{i.name}} - Voted Successfully!!!</h3>
+{% endfor %}    
+
+{% endblock content %}

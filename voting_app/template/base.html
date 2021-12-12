@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>
+    VOTING_POLL_APP
+</title>
+<head>
+    
+    <style>
+        .head{
+		margin:3px;
+		padding:10px;
+		color:white;
+		border:1px grey;
+		text-align:center;
+		background-color:mediumaquamarine;
+		}
+        body{
+            display:ruby;
+            border: 1px solid black;
+            margin: 9mm;
+            background-color:teal;
+        }
+        .cone{
+            margin-left: 525px;
+        }
+        .ctwo{
+            display:ruby;
+            margin:1cm;
+            padding: 1cm;
+            border: 1px solid black;
+            text-align: center;
+            font-display:inherit;
+        }
+        #name{
+
+		border: 1px solid black;
+	    background:transparent;
+		margin-right:10px;
+		display: inline-block;
+		padding: 10px 30px;
+
+        }
+        #btn{
+            padding: 10px;
+            background:grey;
+            margin-left: 0mm;
+
+        }
+        #btn-1{
+            padding: 10px;
+            background:rgba(255, 0, 0, 0.816);
+            margin-right: 100px;
+
+        }
+        #btn-2{
+            padding: 10px;
+            background:crimson;
+
+        }
+        #btn:hover{
+            background-color: grey;
+        }
+        #btn-1:hover{
+            background-color:grey;
+        }
+        #btn-2:hover{
+            background-color:crimson;
+        }
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        li a{
+            display: block;
+
+        }
+        li{
+            float:inherit;
+        }
+        .up{
+            text-align: center;
+            color: black;
+            background-color: chartreuse;
+            border: 1px solid green;
+            margin-left: 14cm;
+            margin-right: 14cm;
+            padding: 10px;
+            text-decoration: chartreuse;
+        }
+        #up:hover{
+            background-color: black;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!---------------------------->
+<body>
+    <div class="head">
+		<h1> <pre>VOTE POLLING APP </pre></h1>
+		<hr>
+	</div>
+<div class="m1">
+  
+    
+    <ul>
+    <div class="ctwo">
+        {% block content %}
+       
+
+
+        {% endblock content %}
+    </div>
+    </ul>
+</div>
+</body>
+</html>
